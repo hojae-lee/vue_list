@@ -5,7 +5,7 @@
 ## vue를 이용하여 기본 셋팅
 1. `Node.js` 설치 (npm 패키지 모듈쓸라고요!)
 2. `vscode` 설치 
-3. `npm`: `npm install -g @vue/cli`, yarn: `yarn global add @vue/cli` vue의 개발환경셋팅을 도와주는 프로그램 입니다.
+3. `npm`: `npm install -g @vue/cli`,<br/> `yarn`: `yarn global add @vue/cli` `vue`의 개발환경셋팅을 도와주는 프로그램 입니다.
 4. `vscode`에 `extension` - `vetur, html/css support, vue 3 snippets 등`
 5. 크롬에 `vue.js devtools` 플러그인 설치
 6. `vue create vuelist` vue3 로 선택하여 만드시면 기본적인 프로젝트가 셋팅됨.
