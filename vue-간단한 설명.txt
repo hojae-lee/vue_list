@@ -1,0 +1,41 @@
+1. Node.js를 설치해주세요~. npm, yarn 써야지! 패키지 모듈~~~~~
+2. 기본적으로 vscode를 사용해요~~
+3. npm install -g @vue/cli vue 개발환경셋팅을 도와주는 프로그램~이에요. yarn도 있어요~ npm이 가끔 뻐그가 있는데
+ yarn으로 가볍게 하시면 되요~~.(가벼운 만큼 좀 더 안정적이고 빨라요~)
+yarn global add @vue/cli // vue 프로젝트 빠르게 생성해주는 라이브러리
+4. extension을 받아볼까요?? vetur, html css support, vue 3 snippets - 쌩코딩안해요~
+5. 벌써 게임 끝났어유~~!
+6. vue create vuedongsan 하위 폴더로 프로젝트가 생성 됩니다. vue3 번째껄로 하세요~~~ 요즘대세~ 프로젝트생성은 요골로 하면 간단해요~~.
+7. App.vue 에 코드를 짜시면 됩니다~ 메인파일이에요.
+8. .vue는 웹브라우저에서 못열어요 app.vue에 있는 파일을 html로 컴파일에서 올려요~~
+9. node_modules는 프로젝트에서 쓰는 라이브러리들 담아 놓은 곳입니다.
+10. package.json 라이브러리 버전, 프로젝트 설정을 기록해둔곳입니다~~~.
+
+데이터 바인딩 JS 데이터를 HTML에 꽂아 넣는 문법.
+기본적으로는 document.getElementById 이런식으로 해서 데이터를 직접 꽂아 넣었는데 뷰는 데이터 보관함을 만들어서 저장해놈.
+여기에 데이터 보관하셈. HTML에 {{데이터 이름}} 해서 꽂아 넣으면댐!
+이 문법 언제 쓸까요?! 데이터 바인딩을 하는 이유 - HTML을 하드코딩 해놓으면 나중에 변경이 어려움. Vue의 실시간 자동 렌더링 쓰려면 하셈!
+Vue는 신기해서 data를 변경하면 data와 관련된 HTML에도 실시간으로 반영됨.
+자주 변경될 데이터들은 밑에 저장해놨다가 콧수염으로 사용하세요.
+HTML 속성도 데이터 바인딩 가능 :style="nameClass",  :속성="데이터이름" => 충격;
+
+v-for 모든 태그에다가 달 수 있음. v-for="작명 in 몇회" :key="작명" => a v-for="menuTitle in 3" :key="menuTitle">Home</a>
+v-for 블록 안에는 부모 범위 속성에 대한 모든 권한이 있음. v-for의 현재 항목의 인덱스에 대한 두번 째 전달 인자 옵션을 제공함.
+v-for="(item, index) in items :keys:item"
+
+key는 고유한 키속성 각항목에 제공해야함.
+작명명 없으면 오류나요~ 왜냐면 반복문 돌린 요소를 컴퓨터가 구분하기 위해 씀 괄호쳐서 Vue 반복문 특 변수 작명2개까지 가능 
+
+vue 스타일로 이벤트 핸들러 
+onClick => v-on:click => @click
+
+함수 만드는 공간
+methods: {
+  increase() {
+    this.Index++;
+  }
+}
+
+// 동적인 UI 만드는 법
+1. UI의 현재 상태를 데이터로 저장해둠.
+2. 데이터에 따라 UI가 어떻게 보일지 작성.
